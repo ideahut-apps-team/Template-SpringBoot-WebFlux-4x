@@ -232,14 +232,13 @@ config:
             standalone:
                 host: '<HOST>'
                 port: '<PORT>'
-                password: '<PASSWORD>'
+                #password: '<PASSWORD>'
                 database: 0
         access:
             type: 0
             standalone:
                 host: '<HOST>'
                 port: '<PORT>'
-                password: '<PASSWORD>'
                 database: 1
                 
     #
