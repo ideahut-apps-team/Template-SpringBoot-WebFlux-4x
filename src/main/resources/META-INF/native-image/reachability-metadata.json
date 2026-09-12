@@ -2551,17 +2551,11 @@
   }, {
     "type" : "com.mysql.cj.jdbc.AbandonedConnectionCleanupThread"
   }, {
-    "type" : "com.mysql.cj.jdbc.ClientPreparedStatement"
-  }, {
     "type" : "com.mysql.cj.jdbc.Driver",
     "methods" : [ {
       "name" : "<init>",
       "parameterTypes" : [ ]
     } ]
-  }, {
-    "type" : "com.mysql.cj.jdbc.exceptions.SQLError"
-  }, {
-    "type" : "com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping"
   }, {
     "type" : "com.mysql.cj.log.StandardLogger",
     "methods" : [ {
@@ -3421,8 +3415,6 @@
       "parameterTypes" : [ ]
     } ]
   }, {
-    "type" : "com.zaxxer.hikari.pool.HikariProxyPreparedStatement"
-  }, {
     "type" : "com.zaxxer.hikari.pool.PoolBase"
   }, {
     "type" : "com.zaxxer.hikari.pool.PoolEntry"
@@ -3432,8 +3424,6 @@
       "name" : "getConnection",
       "parameterTypes" : [ ]
     } ]
-  }, {
-    "type" : "com.zaxxer.hikari.pool.ProxyPreparedStatement"
   }, {
     "type" : "double[]"
   }, {
@@ -11561,6 +11551,8 @@
       "parameterTypes" : [ ]
     } ]
   }, {
+    "type" : "java.util.concurrent.CompletableFuture"
+  }, {
     "type" : "java.util.concurrent.Executor",
     "methods" : [ {
       "name" : "execute",
@@ -14507,6 +14499,12 @@
       "name" : "setType",
       "parameterTypes" : [ "net.ideahut.springboot.entity.EntityIdType" ]
     } ]
+  }, {
+    "type" : "net.ideahut.springboot.admin.HelperKafka"
+  }, {
+    "type" : "net.ideahut.springboot.admin.HelperKafka0"
+  }, {
+    "type" : "net.ideahut.springboot.admin.HelperKafka1"
   }, {
     "type" : "net.ideahut.springboot.admin.HelperRole$InAdminRole",
     "methods" : [ {
@@ -18001,7 +17999,6 @@
     } ]
   }, {
     "type" : "net.ideahut.springboot.api.dto.ApiRoleDto",
-    "unsafeAllocated" : true,
     "fields" : [ {
       "name" : "apiRoleCode"
     }, {
@@ -18034,12 +18031,7 @@
       "parameterTypes" : [ "java.lang.Character" ]
     } ]
   }, {
-    "type" : "net.ideahut.springboot.api.dto.ApiRoleDtoHessianDeserializer"
-  }, {
-    "type" : "net.ideahut.springboot.api.dto.ApiRoleDtoHessianSerializer"
-  }, {
     "type" : "net.ideahut.springboot.api.dto.ApiRoleRequestDto",
-    "unsafeAllocated" : true,
     "fields" : [ {
       "name" : "apiRole"
     }, {
@@ -18127,10 +18119,6 @@
       "name" : "setProduces",
       "parameterTypes" : [ "java.lang.String" ]
     } ]
-  }, {
-    "type" : "net.ideahut.springboot.api.dto.ApiRoleRequestDtoHessianDeserializer"
-  }, {
-    "type" : "net.ideahut.springboot.api.dto.ApiRoleRequestDtoHessianSerializer"
   }, {
     "type" : "net.ideahut.springboot.api.entity.ApiConnect",
     "fields" : [ {
@@ -50419,6 +50407,8 @@
   }, {
     "type" : "org.apache.kafka.clients.producer.ProducerInterceptor"
   }, {
+    "type" : "org.apache.kafka.common.internals.KafkaFutureImpl"
+  }, {
     "type" : "org.apache.kafka.common.metrics.JmxReporter",
     "methods" : [ {
       "name" : "<init>",
@@ -50700,8 +50690,6 @@
       "name" : "<init>",
       "parameterTypes" : [ "org.jboss.logging.Logger" ]
     } ]
-  }, {
-    "type" : "org.hibernate.action.internal.EntityUpdateAction"
   }, {
     "type" : "org.hibernate.annotations.Any"
   }, {
@@ -52091,11 +52079,7 @@
       "parameterTypes" : [ "org.jboss.logging.Logger" ]
     } ]
   }, {
-    "type" : "org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl"
-  }, {
     "type" : "org.hibernate.engine.jdbc.internal.JdbcServicesImpl"
-  }, {
-    "type" : "org.hibernate.engine.jdbc.internal.ResultSetReturnImpl"
   }, {
     "type" : "org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor"
   }, {
@@ -52111,15 +52095,11 @@
       "parameterTypes" : [ "org.jboss.logging.Logger" ]
     } ]
   }, {
-    "type" : "org.hibernate.engine.jdbc.spi.SqlExceptionHelper"
-  }, {
     "type" : "org.hibernate.engine.jdbc.spi.SqlStatementLogger"
   }, {
     "type" : "org.hibernate.engine.jndi.internal.JndiServiceImpl"
   }, {
     "type" : "org.hibernate.engine.query.internal.NativeQueryInterpreterStandardImpl"
-  }, {
-    "type" : "org.hibernate.engine.spi.ActionQueue"
   }, {
     "type" : "org.hibernate.engine.spi.CompositeOwner",
     "methods" : [ {
@@ -52232,15 +52212,9 @@
   }, {
     "type" : "org.hibernate.engine.spi.SessionFactoryImplementor"
   }, {
-    "type" : "org.hibernate.engine.transaction.internal.TransactionImpl"
-  }, {
     "type" : "org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform"
   }, {
     "type" : "org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver"
-  }, {
-    "type" : "org.hibernate.event.internal.AbstractFlushingEventListener"
-  }, {
-    "type" : "org.hibernate.event.internal.DefaultFlushEventListener"
   }, {
     "type" : "org.hibernate.event.internal.EntityCopyLogging_$logger",
     "methods" : [ {
@@ -52253,8 +52227,6 @@
       "name" : "<init>",
       "parameterTypes" : [ "org.jboss.logging.Logger" ]
     } ]
-  }, {
-    "type" : "org.hibernate.event.service.internal.EventListenerGroupImpl"
   }, {
     "type" : "org.hibernate.event.spi.AutoFlushEventListener[]"
   }, {
@@ -52379,8 +52351,6 @@
   }, {
     "type" : "org.hibernate.event.spi.ReplicateEventListener[]"
   }, {
-    "type" : "org.hibernate.exception.internal.StandardSQLExceptionConverter"
-  }, {
     "type" : "org.hibernate.generator.EventType[]"
   }, {
     "type" : "org.hibernate.internal.CoreMessageLogger_$logger",
@@ -52402,8 +52372,6 @@
       "name" : "<init>",
       "parameterTypes" : [ "org.jboss.logging.Logger" ]
     } ]
-  }, {
-    "type" : "org.hibernate.internal.SessionImpl"
   }, {
     "type" : "org.hibernate.internal.SessionLogging_$logger",
     "methods" : [ {
@@ -52527,10 +52495,6 @@
       "name" : "<init>",
       "parameterTypes" : [ ]
     } ]
-  }, {
-    "type" : "org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl"
-  }, {
-    "type" : "org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl"
   }, {
     "type" : "org.hibernate.resource.transaction.internal.SynchronizationLogging_$logger",
     "methods" : [ {
@@ -53004,35 +52968,11 @@
   }, {
     "type" : "org.springframework.aop.SpringProxy"
   }, {
-    "type" : "org.springframework.aop.TargetClassAware",
-    "methods" : [ {
-      "name" : "getTargetClass",
-      "parameterTypes" : [ ]
-    } ]
-  }, {
-    "type" : "org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator"
-  }, {
-    "type" : "org.springframework.aop.framework.Advised",
-    "methods" : [ {
-      "name" : "addAdvisor",
-      "parameterTypes" : [ "org.springframework.aop.Advisor" ]
-    }, {
-      "name" : "getTargetSource",
-      "parameterTypes" : [ ]
-    }, {
-      "name" : "isFrozen",
-      "parameterTypes" : [ ]
-    } ]
+    "type" : "org.springframework.aop.framework.Advised"
   }, {
     "type" : "org.springframework.aop.framework.AopInfrastructureBean"
   }, {
-    "type" : "org.springframework.aop.framework.JdkDynamicAopProxy"
-  }, {
-    "type" : "org.springframework.aop.framework.ProxyConfig",
-    "methods" : [ {
-      "name" : "setProxyTargetClass",
-      "parameterTypes" : [ "boolean" ]
-    } ]
+    "type" : "org.springframework.aop.framework.ProxyConfig"
   }, {
     "type" : "org.springframework.aop.framework.ProxyProcessorSupport",
     "methods" : [ {
@@ -53040,7 +52980,7 @@
       "parameterTypes" : [ "int" ]
     } ]
   }, {
-    "type" : "org.springframework.aop.framework.ReflectiveMethodInvocation"
+    "type" : "org.springframework.aop.framework.autoproxy.InfrastructureAdvisorAutoProxyCreator"
   }, {
     "type" : "org.springframework.aop.scope.ScopedObject"
   }, {
@@ -53065,8 +53005,6 @@
       "name" : "afterPropertiesSet",
       "parameterTypes" : [ ]
     } ]
-  }, {
-    "type" : "org.springframework.beans.factory.SmartInitializingSingleton"
   }, {
     "type" : "org.springframework.beans.factory.annotation.Autowired"
   }, {
@@ -53093,8 +53031,6 @@
       "name" : "<init>",
       "parameterTypes" : [ ]
     } ]
-  }, {
-    "type" : "org.springframework.boot.LazyInitializationExcludeFilter"
   }, {
     "type" : "org.springframework.boot.SpringBootConfiguration"
   }, {
@@ -53130,43 +53066,13 @@
   }, {
     "type" : "org.springframework.boot.autoconfigure.SpringBootApplication"
   }, {
-    "type" : "org.springframework.boot.autoconfigure.aop.AopAutoConfiguration"
-  }, {
-    "type" : "org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$AspectJAutoProxyingConfiguration"
-  }, {
-    "type" : "org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$AspectJAutoProxyingConfiguration$CglibAutoProxyConfiguration"
-  }, {
-    "type" : "org.springframework.boot.autoconfigure.availability.ApplicationAvailabilityAutoConfiguration"
-  }, {
-    "type" : "org.springframework.boot.autoconfigure.condition.ConditionalOnBean"
-  }, {
-    "type" : "org.springframework.boot.autoconfigure.condition.ConditionalOnBooleanProperty"
-  }, {
     "type" : "org.springframework.boot.autoconfigure.condition.ConditionalOnClass"
   }, {
     "type" : "org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean"
   }, {
     "type" : "org.springframework.boot.autoconfigure.condition.ConditionalOnProperty"
   }, {
-    "type" : "org.springframework.boot.autoconfigure.condition.ConditionalOnResource"
-  }, {
-    "type" : "org.springframework.boot.autoconfigure.condition.ConditionalOnSingleCandidate"
-  }, {
-    "type" : "org.springframework.boot.autoconfigure.condition.ConditionalOnThreading"
-  }, {
     "type" : "org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication"
-  }, {
-    "type" : "org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration"
-  }, {
-    "type" : "org.springframework.boot.autoconfigure.context.LifecycleAutoConfiguration"
-  }, {
-    "type" : "org.springframework.boot.autoconfigure.context.LifecycleProperties"
-  }, {
-    "type" : "org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration"
-  }, {
-    "type" : "org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration"
-  }, {
-    "type" : "org.springframework.boot.autoconfigure.info.ProjectInfoProperties"
   }, {
     "type" : "org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener",
     "methods" : [ {
@@ -53192,45 +53098,7 @@
       "parameterTypes" : [ ]
     } ]
   }, {
-    "type" : "org.springframework.boot.autoconfigure.ssl.FileWatcher"
-  }, {
-    "type" : "org.springframework.boot.autoconfigure.ssl.SslAutoConfiguration"
-  }, {
-    "type" : "org.springframework.boot.autoconfigure.ssl.SslBundleRegistrar"
-  }, {
-    "type" : "org.springframework.boot.autoconfigure.ssl.SslProperties"
-  }, {
-    "type" : "org.springframework.boot.autoconfigure.ssl.SslPropertiesBundleRegistrar"
-  }, {
-    "type" : "org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration"
-  }, {
-    "type" : "org.springframework.boot.autoconfigure.task.TaskExecutionProperties"
-  }, {
-    "type" : "org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$ApplicationTaskExecutorAsyncConfigurer"
-  }, {
-    "type" : "org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$AsyncConfigurerConfiguration"
-  }, {
-    "type" : "org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$BootstrapExecutorConfiguration"
-  }, {
-    "type" : "org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$SimpleAsyncTaskExecutorBuilderConfiguration"
-  }, {
-    "type" : "org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$TaskExecutorConfiguration"
-  }, {
-    "type" : "org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$ThreadPoolTaskExecutorBuilderConfiguration"
-  }, {
-    "type" : "org.springframework.boot.autoconfigure.task.TaskSchedulingAutoConfiguration"
-  }, {
-    "type" : "org.springframework.boot.autoconfigure.task.TaskSchedulingConfigurations$SimpleAsyncTaskSchedulerBuilderConfiguration"
-  }, {
-    "type" : "org.springframework.boot.autoconfigure.task.TaskSchedulingConfigurations$ThreadPoolTaskSchedulerBuilderConfiguration"
-  }, {
-    "type" : "org.springframework.boot.autoconfigure.task.TaskSchedulingProperties"
-  }, {
     "type" : "org.springframework.boot.autoconfigure.web.WebProperties"
-  }, {
-    "type" : "org.springframework.boot.availability.ApplicationAvailability"
-  }, {
-    "type" : "org.springframework.boot.availability.ApplicationAvailabilityBean"
   }, {
     "type" : "org.springframework.boot.builder.ParentContextCloserApplicationListener",
     "methods" : [ {
@@ -53344,27 +53212,9 @@
       "parameterTypes" : [ ]
     } ]
   }, {
-    "type" : "org.springframework.boot.hibernate.autoconfigure.HibernateJpaAutoConfiguration"
-  }, {
     "type" : "org.springframework.boot.http.codec.CodecCustomizer"
   }, {
-    "type" : "org.springframework.boot.http.codec.autoconfigure.CodecsAutoConfiguration"
-  }, {
-    "type" : "org.springframework.boot.http.codec.autoconfigure.CodecsAutoConfiguration$DefaultCodecsConfiguration"
-  }, {
-    "type" : "org.springframework.boot.http.codec.autoconfigure.CodecsAutoConfiguration$DefaultCodecsConfiguration$DefaultCodecCustomizer"
-  }, {
-    "type" : "org.springframework.boot.http.codec.autoconfigure.CodecsAutoConfiguration$JacksonJsonCodecConfiguration"
-  }, {
-    "type" : "org.springframework.boot.http.codec.autoconfigure.HttpCodecsProperties"
-  }, {
     "type" : "org.springframework.boot.io.Base64ProtocolResolver",
-    "methods" : [ {
-      "name" : "<init>",
-      "parameterTypes" : [ ]
-    } ]
-  }, {
-    "type" : "org.springframework.boot.io.ClassPathResourceFilePathResolver",
     "methods" : [ {
       "name" : "<init>",
       "parameterTypes" : [ ]
@@ -53428,18 +53278,10 @@
   }, {
     "type" : "org.springframework.boot.jackson.autoconfigure.XmlMapperBuilderCustomizer"
   }, {
-    "type" : "org.springframework.boot.jdbc.autoconfigure.DataSourceTransactionManagerAutoConfiguration"
-  }, {
     "type" : "org.springframework.boot.jpa.EntityManagerFactoryBuilder",
     "methods" : [ {
       "name" : "<init>",
       "parameterTypes" : [ "org.springframework.orm.jpa.JpaVendorAdapter", "java.util.function.Function", "org.springframework.orm.jpa.persistenceunit.PersistenceUnitManager" ]
-    } ]
-  }, {
-    "type" : "org.springframework.boot.jpa.autoconfigure.JpaProperties",
-    "methods" : [ {
-      "name" : "setOpenInView",
-      "parameterTypes" : [ "java.lang.Boolean" ]
     } ]
   }, {
     "type" : "org.springframework.boot.loader.launch.LaunchedClassLoader"
@@ -53468,21 +53310,11 @@
   }, {
     "type" : "org.springframework.boot.logging.logback.RootLogLevelConfigurator"
   }, {
-    "type" : "org.springframework.boot.netty.autoconfigure.NettyAutoConfiguration"
-  }, {
-    "type" : "org.springframework.boot.netty.autoconfigure.NettyProperties"
-  }, {
-    "type" : "org.springframework.boot.persistence.autoconfigure.PersistenceExceptionTranslationAutoConfiguration"
-  }, {
     "type" : "org.springframework.boot.reactor.ReactorEnvironmentPostProcessor",
     "methods" : [ {
       "name" : "<init>",
       "parameterTypes" : [ ]
     } ]
-  }, {
-    "type" : "org.springframework.boot.reactor.autoconfigure.ReactorAutoConfiguration"
-  }, {
-    "type" : "org.springframework.boot.reactor.autoconfigure.ReactorProperties"
   }, {
     "type" : "org.springframework.boot.reactor.netty.NettyReactiveWebServerFactory"
   }, {
@@ -53495,12 +53327,6 @@
     "type" : "org.springframework.boot.reactor.netty.autoconfigure.ReactorNettyConfigurations$ReactorResourceFactoryConfiguration"
   }, {
     "type" : "org.springframework.boot.reactor.netty.autoconfigure.ReactorNettyProperties"
-  }, {
-    "type" : "org.springframework.boot.ssl.DefaultSslBundleRegistry"
-  }, {
-    "type" : "org.springframework.boot.ssl.SslBundleRegistry"
-  }, {
-    "type" : "org.springframework.boot.ssl.SslBundles"
   }, {
     "type" : "org.springframework.boot.support.AnsiOutputApplicationListener",
     "methods" : [ {
@@ -53532,53 +53358,15 @@
       "parameterTypes" : [ ]
     } ]
   }, {
-    "type" : "org.springframework.boot.task.SimpleAsyncTaskExecutorBuilder"
-  }, {
-    "type" : "org.springframework.boot.task.SimpleAsyncTaskSchedulerBuilder"
-  }, {
-    "type" : "org.springframework.boot.task.ThreadPoolTaskExecutorBuilder"
-  }, {
-    "type" : "org.springframework.boot.task.ThreadPoolTaskSchedulerBuilder"
-  }, {
-    "type" : "org.springframework.boot.transaction.autoconfigure.ExecutionListenersTransactionManagerCustomizer"
-  }, {
-    "type" : "org.springframework.boot.transaction.autoconfigure.TransactionAutoConfiguration"
-  }, {
-    "type" : "org.springframework.boot.transaction.autoconfigure.TransactionAutoConfiguration$TransactionTemplateConfiguration"
-  }, {
-    "type" : "org.springframework.boot.transaction.autoconfigure.TransactionManagerCustomizationAutoConfiguration"
-  }, {
-    "type" : "org.springframework.boot.transaction.autoconfigure.TransactionManagerCustomizer"
-  }, {
-    "type" : "org.springframework.boot.transaction.autoconfigure.TransactionManagerCustomizers"
-  }, {
-    "type" : "org.springframework.boot.transaction.autoconfigure.TransactionProperties"
-  }, {
-    "type" : "org.springframework.boot.transaction.jta.autoconfigure.JtaAutoConfiguration"
-  }, {
     "type" : "org.springframework.boot.validation.autoconfigure.JakartaValidationBackgroundPreinitializer",
     "methods" : [ {
       "name" : "<init>",
       "parameterTypes" : [ ]
     } ]
   }, {
-    "type" : "org.springframework.boot.validation.autoconfigure.ValidationAutoConfiguration"
-  }, {
     "type" : "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter"
   }, {
-    "type" : "org.springframework.boot.web.context.reactive.FilteredReactiveWebContextResourceFilePathResolver",
-    "methods" : [ {
-      "name" : "<init>",
-      "parameterTypes" : [ ]
-    } ]
-  }, {
     "type" : "org.springframework.boot.web.context.reactive.GenericReactiveWebApplicationContext"
-  }, {
-    "type" : "org.springframework.boot.web.context.servlet.ServletContextResourceFilePathResolver",
-    "methods" : [ {
-      "name" : "<init>",
-      "parameterTypes" : [ ]
-    } ]
   }, {
     "type" : "org.springframework.boot.web.error.ErrorPageRegistry"
   }, {
@@ -53685,8 +53473,6 @@
   }, {
     "type" : "org.springframework.context.Lifecycle"
   }, {
-    "type" : "org.springframework.context.LifecycleProcessor"
-  }, {
     "type" : "org.springframework.context.Phased"
   }, {
     "type" : "org.springframework.context.SmartLifecycle"
@@ -53703,15 +53489,11 @@
   }, {
     "type" : "org.springframework.context.annotation.ConfigurationClassEnhancer$EnhancedConfiguration"
   }, {
-    "type" : "org.springframework.context.annotation.EnableAspectJAutoProxy"
-  }, {
     "type" : "org.springframework.context.annotation.Import"
   }, {
     "type" : "org.springframework.context.annotation.ImportAware"
   }, {
     "type" : "org.springframework.context.annotation.ImportRuntimeHints"
-  }, {
-    "type" : "org.springframework.context.annotation.Lazy"
   }, {
     "type" : "org.springframework.context.annotation.Primary"
   }, {
@@ -53720,8 +53502,6 @@
     "type" : "org.springframework.context.annotation.Scope"
   }, {
     "type" : "org.springframework.context.support.ApplicationObjectSupport"
-  }, {
-    "type" : "org.springframework.context.support.DefaultLifecycleProcessor"
   }, {
     "type" : "org.springframework.core.DecoratingProxy"
   }, {
@@ -53768,15 +53548,7 @@
       "parameterTypes" : [ "org.springframework.core.io.Resource[]" ]
     } ]
   }, {
-    "type" : "org.springframework.core.task.AsyncTaskExecutor"
-  }, {
-    "type" : "org.springframework.core.task.SimpleAsyncTaskExecutor"
-  }, {
-    "type" : "org.springframework.core.task.TaskExecutor"
-  }, {
     "type" : "org.springframework.dao.DataAccessException"
-  }, {
-    "type" : "org.springframework.dao.support.PersistenceExceptionTranslationInterceptor"
   }, {
     "type" : "org.springframework.data.annotation.QueryAnnotation"
   }, {
@@ -56179,8 +55951,6 @@
       "parameterTypes" : [ ]
     } ]
   }, {
-    "type" : "org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor"
-  }, {
     "type" : "org.springframework.data.jpa.repository.support.DefaultJpaContext"
   }, {
     "type" : "org.springframework.data.jpa.repository.support.JpaEvaluationContextExtension"
@@ -56234,6 +56004,9 @@
   }, {
     "type" : "org.springframework.data.redis.connection.DefaultedRedisConnection",
     "methods" : [ {
+      "name" : "getClientList",
+      "parameterTypes" : [ ]
+    }, {
       "name" : "info",
       "parameterTypes" : [ ]
     } ]
@@ -56731,7 +56504,10 @@
       "parameterTypes" : [ "java.util.Collection" ]
     } ]
   }, {
-    "type" : "org.springframework.data.redis.core.types.RedisClientInfo"
+    "type" : "org.springframework.data.redis.core.types.RedisClientInfo",
+    "fields" : [ {
+      "name" : "clientProperties"
+    } ]
   }, {
     "type" : "org.springframework.data.repository.CrudRepository",
     "methods" : [ {
@@ -57417,8 +57193,6 @@
   }, {
     "type" : "org.springframework.orm.jpa.SharedEntityManagerCreator"
   }, {
-    "type" : "org.springframework.orm.jpa.hibernate.HibernateExceptionTranslator"
-  }, {
     "type" : "org.springframework.orm.jpa.persistenceunit.MutablePersistenceUnitInfo",
     "methods" : [ {
       "name" : "excludeUnlistedClasses",
@@ -57482,10 +57256,6 @@
       "parameterTypes" : [ ]
     } ]
   }, {
-    "type" : "org.springframework.orm.jpa.vendor.HibernateJpaDialect"
-  }, {
-    "type" : "org.springframework.scheduling.annotation.AsyncConfigurer"
-  }, {
     "type" : "org.springframework.scheduling.concurrent.ExecutorConfigurationSupport",
     "methods" : [ {
       "name" : "setVirtualThreads",
@@ -57518,23 +57288,9 @@
   }, {
     "type" : "org.springframework.transaction.annotation.Transactional"
   }, {
-    "type" : "org.springframework.transaction.interceptor.TransactionAspectSupport"
-  }, {
-    "type" : "org.springframework.transaction.interceptor.TransactionInterceptor"
-  }, {
     "type" : "org.springframework.transaction.interceptor.TransactionalProxy"
   }, {
-    "type" : "org.springframework.transaction.support.AbstractPlatformTransactionManager"
-  }, {
-    "type" : "org.springframework.transaction.support.DefaultTransactionDefinition"
-  }, {
-    "type" : "org.springframework.transaction.support.TransactionOperations"
-  }, {
-    "type" : "org.springframework.transaction.support.TransactionTemplate"
-  }, {
     "type" : "org.springframework.util.ConcurrentReferenceHashMap$Segment[]"
-  }, {
-    "type" : "org.springframework.util.CustomizableThreadCreator"
   }, {
     "type" : "org.springframework.validation.SmartValidator"
   }, {
@@ -57581,8 +57337,6 @@
     "type" : "org.springframework.web.bind.annotation.RestController"
   }, {
     "type" : "org.springframework.web.client.RestClientException"
-  }, {
-    "type" : "org.springframework.web.context.support.ServletContextResource"
   }, {
     "type" : "org.springframework.web.cors.reactive.PreFlightRequestHandler"
   }, {
@@ -57803,8 +57557,6 @@
   }, {
     "type" : "reactor.core.publisher.FluxTimeout$TimeoutTimeoutSubscriber"
   }, {
-    "type" : "reactor.core.publisher.FluxUsing$UsingConditionalSubscriber"
-  }, {
     "type" : "reactor.core.publisher.FluxUsing$UsingFuseableSubscriber"
   }, {
     "type" : "reactor.core.publisher.FluxUsingWhen$UsingWhenSubscriber"
@@ -57832,8 +57584,6 @@
     "type" : "reactor.core.publisher.MonoCreate$DefaultMonoSink"
   }, {
     "type" : "reactor.core.publisher.MonoDefer"
-  }, {
-    "type" : "reactor.core.publisher.MonoDeferContextual"
   }, {
     "type" : "reactor.core.publisher.MonoDelay$MonoDelayRunnable"
   }, {
@@ -63741,15 +63491,8 @@
   }, {
     "type" : {
       "lambda" : {
-        "declaringClass" : "org.springframework.boot.LazyInitializationExcludeFilter",
-        "interfaces" : [ "org.springframework.boot.LazyInitializationExcludeFilter" ]
-      }
-    }
-  }, {
-    "type" : {
-      "lambda" : {
-        "declaringClass" : "org.springframework.boot.http.codec.autoconfigure.CodecsAutoConfiguration$JacksonJsonCodecConfiguration",
-        "interfaces" : [ "org.springframework.boot.http.codec.CodecCustomizer" ]
+        "declaringClass" : "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter",
+        "interfaces" : [ "org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter" ]
       }
     }
   }, {
