@@ -63240,8 +63240,6 @@
       "parameterTypes" : [ "java.lang.String" ]
     } ]
   }, {
-    "type" : "tools.jackson.datatype.hibernate7.Hibernate7Module"
-  }, {
     "type" : {
       "proxy" : [ "jakarta.persistence.EntityManager", "org.springframework.orm.jpa.EntityManagerProxy" ]
     }
