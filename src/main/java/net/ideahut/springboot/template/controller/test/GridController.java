@@ -11,7 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
 import net.ideahut.springboot.annotation.Public;
 import net.ideahut.springboot.crud.CrudAction;
 import net.ideahut.springboot.grid.GridHandler;
+import net.ideahut.springboot.helper.WebFluxHelper;
 import net.ideahut.springboot.object.Result;
+import reactor.core.publisher.Mono;
 import tools.jackson.databind.node.ArrayNode;
 import tools.jackson.databind.node.ObjectNode;
 
@@ -34,18 +36,20 @@ class GridController {
 
 	@Public
 	@GetMapping
-	protected Result get(
+	public Mono<Result> get(
 		@RequestParam("name") String name,
 		@RequestParam("parent") String parent
 	) {
-		ObjectNode grid = (ObjectNode) gridHandler.getGrid(parent, name);
-		if (grid != null) {
-			ArrayNode actions = grid.putArray("actions");
-			for (CrudAction crudAction : CrudAction.values()) {
-				actions.add(crudAction.name());
+		return WebFluxHelper.fromCallable(() -> {
+			ObjectNode grid = (ObjectNode) gridHandler.getGrid(parent, name);
+			if (grid != null) {
+				ArrayNode actions = grid.putArray("actions");
+				for (CrudAction crudAction : CrudAction.values()) {
+					actions.add(crudAction.name());
+				}
 			}
-		}
-		return Result.success(grid);
+			return Result.success(grid);
+		});
 	}
 	
 }
